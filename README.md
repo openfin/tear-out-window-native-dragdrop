@@ -143,7 +143,7 @@ angular.module("MyApp").directive("dropZone", function($rootScope, OpenFinAdapte
             });
             el.bind('drop', function(event) {
 		// notify parent window about the drop event via rootScope of parent window
-                    parentRootScope.$emit(“dragdrop”', {action: 'drop'});
+                    parentRootScope.$emit(“dragdrop”, {action: 'drop'});
                     event.preventDefault();
             });
         }
