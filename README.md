@@ -113,9 +113,9 @@ angular.module("MyApp").directive("draggableTab", function() {
             }, 300);
         },
         stopPosSync: function() {  // stop tracking mouse position
-            if (dratTimer) {
-                $interval.cancel(dratTimer);
-                dratTimer = undefined;
+            if (dragTimer) {
+                $interval.cancel(dragTimer);
+                dragTimer = undefined;
             }
             dropTargetWindow.hide();  // hide the child window
         },
