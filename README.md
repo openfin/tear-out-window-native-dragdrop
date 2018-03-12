@@ -1,10 +1,11 @@
-tear-out-window-native-dragdrop
-===============================
+# Tear Out Window Native Dragdrop Example
 
-Tear out windows with native drag and drop on OpenFin desktop
+## Overview
+Tear out windows with native drag and drop on OpenFin
 
 This approach uses native HTML5 drag and drop.  Since drop can happen outside of the window, we need to create a small and transparent child window as drop target.   This child window follows mouse movement so it can capture drop events.  
 
+### Guidelines
 1. Directive for draggable component in main window
 
  ```javascript
@@ -151,3 +152,12 @@ angular.module("MyApp").directive("dropZone", function($rootScope, OpenFinAdapte
 });
 
  ```
+
+## Disclaimers
+* This is a starter example and intended to demonstrate to app providers a sample of how to approach an implementation. There are potentially other ways to approach it and alternatives could be considered. 
+* This is an open source project and all are encouraged to contribute.
+* Its possible that the repo is not actively maintained.
+
+## Support
+Please enter an issue in the repo for any questions or problems. 
+<br> Alternatively, please contact us at support@openfin.co
